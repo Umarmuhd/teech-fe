@@ -8,6 +8,9 @@ import { useState, useContext, useEffect } from "react";
 import { AuthContext } from "@/context/AuthContext";
 import { toast } from "react-toastify";
 
+// layout for page
+import Auth from "@/layouts/Auth";
+
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -42,21 +45,21 @@ export default function Login() {
     <>
       <Head>
         <title>Login - Teech</title>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
         <div className="h-full">
           <div className="h-screen login grid place-content-center bg-greyBg">
-            <div className="flex justify-between mx-auto w-full py-10 bg-white shadow px-10">
-              <div className="left mr-10">
+            <div className="flex mx-auto w-full md:w-md py-10 bg-white shadow px-10">
+              <div className="left mr-10 hidden md:block">
                 <img
                   src="/images/image.png"
                   alt="login"
                   className=" w-60 h-full"
                 />
               </div>
-              <form className="right" onSubmit={handleLogin}>
+              <form className="right flex-grow" onSubmit={handleLogin}>
                 <h1 className="text-3xl font-bold mb-5 font-head">
                   Welcome back &#128075;
                 </h1>
@@ -119,3 +122,5 @@ export default function Login() {
     </>
   );
 }
+
+Login.layout = Auth;

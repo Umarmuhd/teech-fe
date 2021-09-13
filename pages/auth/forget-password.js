@@ -4,6 +4,9 @@ import { useState } from "react";
 import { API_URL } from "@/config/index";
 import axios from "axios";
 
+// layout for page
+import Auth from "@/layouts/Auth";
+
 export default function ForgetPassword() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
@@ -76,3 +79,5 @@ export default function ForgetPassword() {
     </>
   );
 }
+
+ForgetPassword.layout = Auth;

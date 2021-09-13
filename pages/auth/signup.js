@@ -6,6 +6,9 @@ import { useRouter } from "next/router";
 import { AuthContext } from "@/context/AuthContext";
 import { toast } from "react-toastify";
 
+// layout for page
+import Auth from "@/layouts/Auth";
+
 export default function Signup() {
   const nameRef = useRef();
   const emailRef = useRef();
@@ -37,8 +40,8 @@ export default function Signup() {
     <>
       <div className="h-full">
         <div className="h-screen signup grid place-content-center bg-greyBg">
-          <div className="flex justify-between mx-auto w-full py-10 bg-white shadow px-10">
-            <div className="left mr-10 flex items-center">
+          <div className="flex justify-between mx-auto w-full md:w-md py-10 bg-white shadow px-10">
+            <div className="left mr-10 md:flex items-center hidden">
               <img src="/images/image.png" alt="login" className="w-60" />
             </div>
             <form className="right" onSubmit={handleRegister}>
@@ -118,3 +121,5 @@ export default function Signup() {
     </>
   );
 }
+
+Signup.layout = Auth;
