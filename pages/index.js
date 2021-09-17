@@ -146,7 +146,7 @@ export default function Home() {
           </div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-between">
-              <div className="left mb-5 text-center md:w-9/20 md:py-20 md:mb-0 md:text-left">
+              <div className="left mb-7 text-center md:w-9/20 md:py-20 md:mb-0 md:text-left">
                 <h2 className="text-3xl font-semibold text-midBlack mb-2">
                   Why Choose Us?
                 </h2>
