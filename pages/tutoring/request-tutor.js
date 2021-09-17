@@ -47,9 +47,34 @@ export default function RequestTutor() {
 
   const [activeStep, setActiveStep] = useState(steps[0]);
 
-  const handleNext = () => {};
+  const handleNext = () => {
+    if (steps[steps.length - 1].key === activeStep.key) {
+      alert("You have completed all steps.");
+      return;
+    }
 
-  const handleBack = () => {};
+    const index = steps.findIndex((x) => x.key === activeStep.key);
+    setSteps((prevStep) =>
+      prevStep.map((x) => {
+        if (x.key === activeStep.key) x.isDone = true;
+        return x;
+      })
+    );
+    setActiveStep(steps[index + 1]);
+  };
+
+  const handleBack = () => {
+    const index = steps.findIndex((x) => x.key === activeStep.key);
+    if (index === 0) return;
+
+    setSteps((prevStep) =>
+      prevStep.map((x) => {
+        if (x.key === activeStep.key) x.isDone = false;
+        return x;
+      })
+    );
+    setActiveStep(steps[index - 1]);
+  };
 
   return (
     <>
@@ -63,12 +88,21 @@ export default function RequestTutor() {
                 <div className="md:p-4 py-4">
                   <div>{activeStep.component()}</div>
 
-                  <div className="flex p-2 mt-4 w-11/12 mx-auto justify-between next-n-prev">
-                    <button className="text-base focus:outline-none px-4 py-2 rounded font-medium cursor-pointer shadow border">
+                  <div className="flex p-2 mt-4 w-full md:w-11/12 mx-auto justify-between next-n-prev">
+                    <button
+                      className="text-base focus:outline-none px-4 py-2 rounded font-medium cursor-pointer shadow border"
+                      onClick={handleBack}
+                      disabled={steps[0].key === activeStep.key}
+                    >
                       Back
                     </button>
-                    <button className="text-white focus:outline-none px-4 py-2 rounded font-bold cursor-pointer bg-secondary border border-secondary">
-                      Next
+                    <button
+                      className="text-white focus:outline-none px-4 py-2 rounded font-bold cursor-pointer bg-secondary border border-secondary"
+                      onClick={handleNext}
+                    >
+                      {steps[steps.length - 1].key !== activeStep.key
+                        ? "Next"
+                        : "Submit"}
                     </button>
                   </div>
                 </div>

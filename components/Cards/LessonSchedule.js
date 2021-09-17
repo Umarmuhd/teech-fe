@@ -1,14 +1,16 @@
 export default function LessonSchedule() {
   return (
     <div className="form">
-      <h2 className="text-center text-2xl font-semibold mb-4">
-        Lesson schedule
-      </h2>
-      <p className="text-center text-lg mb-5">
-        How long you need a tutor for and what time?
-      </p>
+      <div className="mx-auto px-2 md:px-0 w-full md:w-11/12">
+        <h2 className="text-2xl font-semibold mb-4 text-primary font-head">
+          Lesson schedule
+        </h2>
+        <p className="text-lg mb-5 text-midBlack">
+          How long you need a tutor for and what time?
+        </p>
+      </div>
 
-      <div className="container md:px-2 py-4 md:w-11/12 mx-auto mb-5 flex flex-col justify-between md:flex-row">
+      <div className="container px-2 py-4 md:w-11/12 mx-auto mb-5 flex flex-col justify-between md:flex-row">
         <div className="md:w-3/5 w-full">
           <div className="block">
             <span className="text-base font-medium text-gray-900 block mb-2 text-left">
@@ -81,7 +83,7 @@ export default function LessonSchedule() {
           </div>
           <div className="flex justify-between flex-col mt-5 md:flex-row">
             <div className="md:w-9/20 w-full">
-              <div className="mb-6">
+              <div className="mb-4 md:mb-6">
                 <label
                   htmlFor="startDate"
                   className="text-base font-medium text-gray-900 block mb-2 text-left"
@@ -99,14 +101,14 @@ export default function LessonSchedule() {
                   required
                 />
               </div>{" "}
-              <div className="mb-6">
+              <div className="mb-4 md:mb-6">
                 <label
                   htmlFor="email"
                   className="text-base font-medium text-gray-900 block mb-2 text-left"
                 >
                   How many hours per day?
                 </label>
-                <select className="form-select block w-full mt-1 py-2 px-4 rounded border">
+                <select className="form-select block w-full mt-1 py-3 px-2 rounded border">
                   <option>select</option>
                   <option>1 hour</option>
                   <option>2 hours</option>
@@ -117,14 +119,14 @@ export default function LessonSchedule() {
               </div>{" "}
             </div>
             <div className="md:w-9/20 w-full">
-              <div className="mb-6">
+              <div className="mb-4 md:mb-6">
                 <label
                   htmlFor="email"
                   className="text-base font-medium text-gray-900 block mb-2 text-left"
                 >
                   For how long?
                 </label>
-                <select className="form-select block w-full mt-1 py-2 px-3 rounded border">
+                <select className="form-select block w-full mt-1 py-3 px-2 rounded border">
                   <option>Select</option>
                   <option>One Week</option>
                   <option>Two Weeks</option>
@@ -134,7 +136,7 @@ export default function LessonSchedule() {
                   <option>Three Months</option>
                 </select>
               </div>{" "}
-              <div className="mb-6">
+              <div className="mb-4 md:mb-6">
                 <label
                   htmlFor="referral"
                   className="text-base font-medium text-gray-900 block mb-2 text-left"
@@ -155,7 +157,7 @@ export default function LessonSchedule() {
             </div>
           </div>
         </div>
-        <div className="md:w-2/6 w-full border rounded md:px-4 py-5">
+        <div className="md:w-2/6 w-full md:border md:rounded md:px-4 py-5">
           <p className="text-base font-medium text-blackText block mb-5 text-left">
             Tuition Fee
           </p>

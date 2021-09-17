@@ -1,17 +1,19 @@
 export default function ContactInfoLast() {
   return (
     <div className="form">
-      <h2 className="text-center text-2xl font-semibold mb-4">
-        Personal Information
-      </h2>
-      <p className="text-center text-lg mb-5">
-        This is used to contact you about your lessons
-      </p>
+      <div className="mx-auto w-full px-2 md:px-0 md:w-11/12">
+        <h2 className="text-2xl font-semibold mb-4 text-primary font-head">
+          Personal Information
+        </h2>
+        <p className="text-lg mb-5 text-midBlack">
+          This is used to contact you about your lessons
+        </p>
+      </div>
 
-      <div className="container px-2 py-4 w-11/12 mx-auto mb-5">
-        <div className="flex justify-between">
-          <div className="w-9/20">
-            <div className="mb-6">
+      <div className="container px-2 py-4 w-full md:w-11/12 mx-auto mb-5">
+        <div className="flex justify-between flex-col md:flex-row">
+          <div className="w-full md:w-9/20">
+            <div className="mb-4 md:mb-6">
               <label
                 htmlFor="firstName"
                 className="text-base font-medium text-gray-900 block mb-2 text-left"
@@ -29,7 +31,7 @@ export default function ContactInfoLast() {
                 required
               />
             </div>{" "}
-            <div className="mb-6">
+            <div className="mb-4 md:mb-6">
               <label
                 htmlFor="phone"
                 className="text-base font-medium text-gray-900 block mb-2 text-left"
@@ -48,8 +50,8 @@ export default function ContactInfoLast() {
               />
             </div>{" "}
           </div>
-          <div className=" w-9/20">
-            <div className="mb-6">
+          <div className="w-full md:w-9/20">
+            <div className="mb-4 md:mb-6">
               <label
                 htmlFor="lastName"
                 className="text-base font-medium text-gray-900 block mb-2 text-left"
@@ -67,7 +69,7 @@ export default function ContactInfoLast() {
                 required
               />
             </div>
-            <div className="mb-6">
+            <div className="mb-4 md:mb-6">
               <label
                 htmlFor="referral"
                 className="text-base font-medium text-gray-900 block mb-2 text-left"

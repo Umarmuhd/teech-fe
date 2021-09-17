@@ -1,6 +1,6 @@
 export default function AboutChildFirst() {
   return (
-    <div className="form md:px-2">
+    <div className="form px-2">
       <div className="mx-auto w-full md:w-11/12">
         <h2 className="text-2xl font-semibold mb-4 text-primary font-head">
           Let's get a good tutor for your child
@@ -8,8 +8,8 @@ export default function AboutChildFirst() {
         <p className="text-lg mb-5 text-midBlack">Tell us your child.</p>
       </div>
 
-      <div className="flex justify-between w-full md:w-11/12 mx-auto mb-5">
-        <div className="mb-6 w-9/20">
+      <div className="flex justify-between w-full flex-col md:flex-row md:w-11/12 mx-auto md:mb-5 mb-4">
+        <div className="mb-4 md:mb-6 w-full md:w-9/20">
           <label
             htmlFor="email"
             className="text-base font-medium text-gray-900 block mb-2 text-left"
@@ -27,7 +27,7 @@ export default function AboutChildFirst() {
             required
           />
         </div>
-        <div className="mb-6 w-9/20">
+        <div className="mb-4 md:mb-6 w-full md:w-9/20">
           <label
             htmlFor="age"
             className="text-base font-medium text-gray-900 block mb-2 text-left"
@@ -46,8 +46,8 @@ export default function AboutChildFirst() {
           />
         </div>
       </div>
-      <div className="flex justify-between w-full md:w-11/12 mx-auto mb-5">
-        <div className="mb-6 w-9/20">
+      <div className="flex justify-between w-full flex-col md:flex-row md:w-11/12 mx-auto mb-5">
+        <div className="mb-4 md:mb-6 w-full md:w-9/20">
           <label
             htmlFor="class"
             className="text-base font-medium text-gray-900 block mb-2 text-left"
@@ -65,14 +65,14 @@ export default function AboutChildFirst() {
             required
           />
         </div>{" "}
-        <div className="mb-6 w-9/20">
+        <div className="mb-4 md:mb-6 w-full md:w-9/20">
           <label
             htmlFor="gender"
             className="text-base font-medium text-gray-900 block mb-2 text-left"
           >
             Child gender
           </label>
-          <select className="form-select block w-full mt-1 py-2 px-3 rounded border">
+          <select className="form-select block w-full mt-1 py-3 px-2 rounded border">
             <option className="px-2">Select</option>
             <option className="px-2">Male</option>
             <option className="px-2">Female</option>

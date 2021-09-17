@@ -24,7 +24,7 @@ export default function Home() {
                   lessons taught by exceptional teachers
                 </p>
                 <div className="flex flex-col w-full md:flex-row md:w-5/6">
-                  <Link href="/auth/signup">
+                  <Link href="/tutoring/request-tutor">
                     <a className="text-lg bg-primary px-7 py-4 text-white font-semibold rounded-lg md:mr-10 font-head mb-4 md:mb-0">
                       Hire home tutor
                     </a>
@@ -158,7 +158,7 @@ export default function Home() {
                   consector
                 </p>
                 <div className="pt-6">
-                  <Link href="/auth/signup">
+                  <Link href="/tutoring/request-tutor">
                     <a className="text-lg bg-primary px-7 py-4 text-white font-semibold rounded-lg md:mr-10 font-head">
                       Hire home tutor
                     </a>
@@ -328,7 +328,7 @@ export default function Home() {
                   esse, ipsa animi odio mollitia? Mollitia, officiis minima?
                 </p>
                 <div className="pt-6">
-                  <Link href="/auth/signup">
+                  <Link href="/tutoring/request-tutor">
                     <a className="text-lg bg-primary px-7 py-4 text-white font-semibold rounded-lg md:mr-10 font-head">
                       Hire home tutor
                     </a>
@@ -406,7 +406,7 @@ export default function Home() {
               kids
             </h2>
             <div className="pt-6 text-center">
-              <Link href="/auth/signup">
+              <Link href="/tutoring/request-tutor">
                 <a className="text-lg bg-primary px-7 py-4 text-white font-semibold rounded-lg md:mr-10 font-head">
                   Hire home tutor
                 </a>

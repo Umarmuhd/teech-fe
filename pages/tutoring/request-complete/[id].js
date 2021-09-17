@@ -22,8 +22,8 @@ export default function RequestCompleted() {
               What Next?
             </h3>
 
-            <div className="flex justify-between mb-8">
-              <div className="md:w-31/100 w-full py-5">
+            <div className="flex justify-between mb-8 flex-col md:flex-row">
+              <div className="md:w-31/100 w-full py-5 mb-4 md:mb-0">
                 <span className="rounded-full border-solid border-4 flex justify-center items-center w-10 h-10 mb-4">
                   1
                 </span>
@@ -36,7 +36,7 @@ export default function RequestCompleted() {
                 </p>
               </div>
 
-              <div className="md:w-31/100 w-full py-5">
+              <div className="md:w-31/100 w-full py-5 mb-4 md:mb-0">
                 <span className="rounded-full border-solid border-4 flex justify-center items-center w-10 h-10 mb-4">
                   2
                 </span>
@@ -48,7 +48,7 @@ export default function RequestCompleted() {
                   incidunt, error porro cum tempora, perspiciatis.
                 </p>
               </div>
-              <div className="md:w-31/100 w-full py-5">
+              <div className="md:w-31/100 w-full py-5 mb-4 md:mb-0">
                 <span className="rounded-full border-solid border-4 flex justify-center items-center w-10 h-10 mb-4">
                   3
                 </span>
