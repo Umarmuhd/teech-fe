@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Navbar(props) {
+export default function DashboardNavbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
